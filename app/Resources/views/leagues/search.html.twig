@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+<div>
+    {{ form_start(form, { 'attr': {'class': 'navbar-form navbar-left'} }) }}
+    <div class="form-group">
+        {{ form_widget(form.league, { 'attr': {'class': 'form-control'} }) }}
+        <button type="reset" value="Reset">Cancel</button>
+    </div>
+
+    {{ form_rest(form) }}
+    {{ form_end(form) }}
+</div>

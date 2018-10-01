@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.0/css/bootstrap">
+{% endblock %}
+{% block body %}
+    <div class="card" style="width: 18rem;">
+        <ul class="list-group list-group-flush">
+            <table class="table table-bordered">
+                <thead>
+                <tr> 
+                <th scope="col"><img src="{{ strThumb }}" class="img-fluid" alt="Responsive image"></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="col">{{ strPlayer }}</th>
+                </tr>
+                <tr>
+                    <th scope="col">{{ strSigning }}</th>
+                </tr>
+                <tr>
+                <th scope="col">{{ strNationality }}</th>
+                </tr>
+                <tr>
+                    <th scope="col">{{ dateBorn }}</th>
+                </tr>
+                <tr>
+                <th scope="col">{{ strPosition }}</th>
+                </tr>
+                <tr>
+                <th scope="col">{{ strWeight }}</th>
+                </tr>
+                </tbody>
+            </table>
+        </ul>
+    </div>
+{% endblock %}
